@@ -10,3 +10,5 @@
 <!-- LOVABLE:END -->
 
 - UI strings live in src/lib/i18n/ru.ts and demo content in src/data/demo.ts, so other languages and real data can replace them without touching components.
+- Demo credential forms have no auth calls or session simulation and keep password inputs uncontrolled and unpersisted, so the UI cannot suggest a real account exists.
+- The page owns the in-memory post draft and passes it to the form, so modal dismissal does not discard input; refreshing deliberately clears it until persistence is requested.
