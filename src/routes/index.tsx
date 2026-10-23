@@ -55,8 +55,8 @@ function Index() {
         <p className="mt-1 text-xs text-muted-foreground">{t.demoNote}</p>
       </div>
 
-      <main className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 lg:grid-cols-[260px_minmax(0,1fr)_280px]">
-        <aside className="lg:sticky lg:top-20 lg:self-start"><Rating /></aside>
+      <main className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)] gap-6 px-4 pb-16 lg:grid-cols-[260px_minmax(0,1fr)_280px]">
+        <aside className="min-w-0 lg:sticky lg:top-20 lg:self-start"><Rating /></aside>
 
         <div className="min-w-0 space-y-4">
           <div className="flex items-start gap-3 rounded-xl bg-ink px-4 py-3 text-sm text-paper">
@@ -102,7 +102,7 @@ function Index() {
           </div>
         </div>
 
-        <aside className="lg:sticky lg:top-20 lg:self-start"><Board /></aside>
+        <aside className="min-w-0 lg:sticky lg:top-20 lg:self-start"><Board /></aside>
       </main>
 
       <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">{t.footer}</footer>
