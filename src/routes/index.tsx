@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Fragment, useState } from "react";
+import babkaImg from "@/assets/char-babka.jpg";
 import { Megaphone, Pin, Plus } from "lucide-react";
 import { t } from "@/lib/i18n/ru";
 import { ADMIN_MESSAGE, POSTS, SECTIONS, TOPIC_OF_DAY, type SectionId } from "@/data/demo";
@@ -112,7 +113,7 @@ function Index() {
 
       <Modal open={gateOpen} onOpenChange={setGateOpen} title={t.brand}>
         <div className="text-center">
-          <img src={LEADER_IMG} alt="" width={112} height={112} className="mx-auto mb-4 size-28 rounded-full border-2 border-ink object-cover" />
+          <img src={babkaImg} alt="" width={112} height={112} className="mx-auto mb-4 size-28 rounded-full border-2 border-ink object-cover" />
           <p className="font-display text-lg font-semibold leading-snug">{t.gate.text}</p>
           <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
             <button className="min-h-12 rounded-full border-2 border-ink px-6 font-semibold hover:bg-muted">{t.gate.login}</button>
@@ -124,5 +125,5 @@ function Index() {
   );
 }
 
-import babkaImg from "@/assets/char-babka.jpg";
-const LEADER_IMG = babkaImg;
+
+
