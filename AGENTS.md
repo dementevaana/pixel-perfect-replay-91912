@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- UI strings live in src/lib/i18n/ru.ts and demo content in src/data/demo.ts, so other languages and real data can replace them without touching components.
